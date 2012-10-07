@@ -85,6 +85,22 @@
                 android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
     </header>
 
+    <header android:icon="@drawable/ic_settings_cpuboxdual"
+            android:title="@string/cpuboxdual_title">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.rdata.cpubox.dual.CPUActivity"
+                android:targetPackage="com.rdata.cpubox.dual" />
+    </header>
+
+    <header android:icon="@drawable/ic_settings_nexustools"
+            android:title="@string/nexustools_title">
+        <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.rdata.gnexcleaner.MainActivity"
+                android:targetPackage="com.rdata.gnexcleaner" />
+    </header>
+
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 
