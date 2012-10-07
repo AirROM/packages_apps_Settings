@@ -28,7 +28,13 @@
 
         <CheckBoxPreference
             android:key="visiblepattern"
+	    android:persistent="false"
             android:title="@string/lockpattern_settings_enable_visible_pattern_title"/>
+
+	<CheckBoxPreference
+	    android:key="visibledots"
+	    android:persistent="false"
+	    android:title="@string/lockpattern_settings_enable_dots_title"/>
 
         <ListPreference
             android:key="lock_after_timeout"

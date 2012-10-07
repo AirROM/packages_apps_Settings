@@ -57,6 +57,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_BIOMETRIC_WEAK_LIVELINESS = "biometric_weak_liveliness";
     private static final String KEY_LOCK_ENABLED = "lockenabled";
     private static final String KEY_VISIBLE_PATTERN = "visiblepattern";
+    private static final String KEY_VISIBLE_DOTS = "visibledots";
     private static final String KEY_TACTILE_FEEDBACK_ENABLED = "unlock_tactile_feedback";
     private static final String KEY_SECURITY_CATEGORY = "security_category";
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
@@ -80,6 +81,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private CheckBoxPreference mBiometricWeakLiveliness;
     private CheckBoxPreference mVisiblePattern;
     private CheckBoxPreference mTactileFeedback;
+    private CheckBoxPreference mVisibleDots;
 
     private CheckBoxPreference mShowPassword;
 
@@ -168,6 +170,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         // visible pattern
         mVisiblePattern = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_PATTERN);
 
+	// visible dots
+	mVisibleDots = (CheckBoxPreference) root.findPreference(KEY_VISIBLE_DOTS);
+
         // lock instantly on power key press
         mPowerButtonInstantlyLocks = (CheckBoxPreference) root.findPreference(
                 KEY_POWER_INSTANTLY_LOCKS);
@@ -178,8 +183,10 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 DevicePolicyManager.PASSWORD_QUALITY_SOMETHING) {
             PreferenceGroup securityCategory = (PreferenceGroup)
                     root.findPreference(KEY_SECURITY_CATEGORY);
-            if (securityCategory != null && mVisiblePattern != null) {
-                securityCategory.removePreference(root.findPreference(KEY_VISIBLE_PATTERN));
+            if (securityCategory != null && mVisiblePattern != null &&
+		mVisibleDots != null) {
+                securityCategory.removePreference(mVisiblePattern);
+		securityCategory.removePreference(mVisibleDots);
             }
         }
 
@@ -345,6 +352,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if (mVisiblePattern != null) {
             mVisiblePattern.setChecked(lockPatternUtils.isVisiblePatternEnabled());
         }
+	if (mVisibleDots != null) {
+	    mVisibleDots.setChecked(lockPatternUtils.isVisibleDotsEnabled());
+	}
         if (mTactileFeedback != null) {
             mTactileFeedback.setChecked(lockPatternUtils.isTactileFeedbackEnabled());
         }
@@ -406,6 +416,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
             lockPatternUtils.setLockPatternEnabled(isToggled(preference));
         } else if (KEY_VISIBLE_PATTERN.equals(key)) {
             lockPatternUtils.setVisiblePatternEnabled(isToggled(preference));
+	} else if (KEY_VISIBLE_DOTS.equals(key)) {
+	    lockPatternUtils.setVisibleDotsEnabled(isToggled(preference));
         } else if (KEY_TACTILE_FEEDBACK_ENABLED.equals(key)) {
             lockPatternUtils.setTactileFeedbackEnabled(isToggled(preference));
         } else if (KEY_POWER_INSTANTLY_LOCKS.equals(key)) {

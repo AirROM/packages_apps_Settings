@@ -956,6 +956,7 @@
     <string name="lockpattern_settings_enable_title" msgid="6920616873671115281">"패턴 설정"</string>
     <string name="lockpattern_settings_enable_summary" msgid="1165707416664252167">"화면 잠금을 해제하려면 패턴을 그려야 합니다."</string>
     <string name="lockpattern_settings_enable_visible_pattern_title" msgid="2615606088906120711">"패턴 표시"</string>
+    <string name="lockpattern_settings_enable_dots_title">패턴 모양 표시</string>
     <string name="lockpattern_settings_enable_tactile_feedback_title" msgid="8898518337442601027">"터치 시 진동"</string>
     <string name="lockpattern_settings_enable_power_button_instantly_locks" msgid="5735444062633666327">"전원 버튼 즉시 잠금"</string>
     <string name="lockpattern_settings_choose_lock_pattern" msgid="1652352830005653447">"잠금해제 패턴 설정"</string>
