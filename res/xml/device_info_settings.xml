@@ -24,6 +24,8 @@
             <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
         </PreferenceScreen> -->
 
+	 <PreferenceScreen android:key="logo_airrom"
+                          android:layout="@layout/logo_settings_airrom" />
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">
