@@ -1705,4 +1705,82 @@
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"셀 브로드캐스트"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"표시할 긴급 알림 유형을 선택합니다."</string>
     <string name="mod_version">공기롬 버전</string>
+    <string name="quick_links_title">바로가기</string>
+    <string name="rom_control_title">롬 컨트롤</string>
+    <string name="themes_title">테마</string>
+    <!--  About device screen, Hardware info -->
+    <string name="hardware_info">하드웨어 정보</string>
+    <!--  About device Screen, hardware info, rear camera -->
+    <string name="device_rear_camera">후면 카메라</string>
+    <!--  About device Screen, hardware info, front camera -->
+    <string name="device_front_camera">전면 카메라</string>
+    <!--  About device Screen, hardware info, screen res -->
+    <string name="device_screen_resolution">화면 해상도</string>
+    <!--  About device Screen, hardware info, GPU info -->
+    <string name="gpu_info">GPU</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">메모리</string>
+    <string name="nfc_polling_mode_title">NFC 폴링 모드</string>
+    <string name="nfc_polling_mode_screen_off">화면 꺼짐</string>
+    <string name="nfc_polling_mode_screen_locked">화면 켜짐, 잠금</string>
+    <string name="nfc_polling_mode_screen_unlocked">화면 켜짐, 풀림 (기본값)</string>
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_restore_title">헤드셋 볼륨 보호</string>
+    <string name="safe_headset_restore_summary">헤드셋이 연결되었을 때 큰 볼륨을 방지</string>
+    <!-- Sound settings screen, setting check box label -->
+    <string name="volume_adjust_sounds_enable_title">볼륨 조절 소리</string>
+    <!-- Sound settings screen, setting check box summary -->
+    <string name="volume_adjust_sounds_enable_summary">볼륨키로 볼륨을 조절했을 때 소리 재생</string>
+    <!-- Sound settings screen, setting check box label -->
+    <string name="camera_sounds_title">카메라 소리</string>
+    <string name="camera_sounds_summary">경고: 카메라 셔터음을 사용하지 않는 것은 몇몇 지역에선 불법입니다!</string>
+    <!-- Backlight  -->
+    <string name="backlight_title">자동 백라이트</string>
+    <string name="backlight_summary">레벨과 필터링 트윅</string>
+    <string name="light_filter_title">조도 센서 필터</string>
+    <string name="light_filter_enabled_title">활성화</string>
+    <string name="light_filter_enabled_summary">센서 데이터에 평균 필터를 사용하여 깜빡임을 줄입니다.</string>
+    <string name="light_filter_window_title">구간 크기</string>
+    <string name="light_filter_window_summary">이 구간 동안의 원본 데이터를 평균내어 센서 값으로 사용합니다.</string>
+    <string name="light_filter_reset_title">초기화 한계</string>
+    <string name="light_filter_reset_summary">이 값을 넘기는 데이터는 필터를 초기화시킵니다.</string>
+    <string name="light_filter_interval_title">측정 주기</string>
+    <string name="light_filter_interval_summary">더 낮은 값은 정확도를 높이지만 CPU를 더 많이 사용합니다.</string>
+    <string name="light_levels_title">백라이트 밝기 단계</string>
+    <string name="light_levels_enabled_title">사용자 지정 사용</string>
+    <string name="light_levels_dim_title">어두울 때의 밝기</string>
+    <string name="light_levels_dim_summary">화면을 어둡게 할 때의 밝기를 지정합니다</string>
+    <string name="light_levels_editor_title">다른 단계 편집\u2026</string>
+    <string name="light_decrease_enabled_title">밝기 감소 허용</string>
+    <string name="light_decrease_enabled_summary">밝기 감소를 허용합니다. 히스테리시스를 사용하여 깜빡임을 줄일 수 있습니다.</string>
+    <string name="light_decrease_hysteresis_title">감소 히스테리시스</string>
+    <string name="light_decrease_hysteresis_summary">이 값을 넘는 센서 값이 들어와야 밝기가 감소됩니다.</string>
+    <!-- Quiet hours #CM -->
+    <string name="quiet_hours_title">취침 모드</string>
+    <string name="quiet_hours_summary">장치를 무음모드로 설정할 시간을 설정합니다.</string>
+    <string name="quiet_hours_note_title">안내</string>
+    <string name="quiet_hours_note_summary">취침 모드 동안 걸려오는 전화는 평상시와 동일하게 동작합니다.</string>
+    <string name="quiet_hours_enabled">취침 모드 활성화</string>
+    <string name="quiet_hours_enabled_on">취침 모드가 활성화됩니다.</string>
+    <string name="quiet_hours_enabled_off">알림이 평상시처럼 작동합니다.</string>
+    <string name="quiet_hours_start">취침 모드 시작</string>
+    <string name="quiet_hours_start_summary">취침 모드를 시작할 시간을 설정합니다.</string>
+    <string name="quiet_hours_end">취침 모드 종료</string>
+    <string name="quiet_hours_end_summary">취침 모드를 종료할 시간을 설정합니다.</string>
+    <string name="quiet_hours_mute">알림 소리 끄기</string>
+    <string name="quiet_hours_mute_on">알림 소리가 음소거됩니다.</string>
+    <string name="quiet_hours_mute_off">알림 소리가 평상시 설정대로 작동합니다.</string>
+    <string name="quiet_hours_still">진동 끄기</string>
+    <string name="quiet_hours_still_on">진동을 사용하지 않습니다.</string>
+    <string name="quiet_hours_still_off">진동을 사용합니다.</string>
+    <string name="quiet_hours_dim">알림등 비활성화</string>
+    <string name="quiet_hours_dim_on">알림등을 사용하지 않습니다.</string>
+    <string name="quiet_hours_dim_off">알림등을 사용합니다.</string>
+    <string name="quiet_hours_haptic">햅틱 반응 비활성화</string>
+    <string name="quiet_hours_haptic_on">햅틱 반응이 비활성화됩니다.</string>
+    <string name="quiet_hours_haptic_off">햅틱 반응이 평상시처럼 작동합니다.</string>
+    <string name="quiet_hours_active_from">활성화 시작</string>
+    <string name="quiet_hours_active_to">끝</string>
 </resources>
